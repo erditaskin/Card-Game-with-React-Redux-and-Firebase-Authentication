@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+ app:
+  build:
+   context: .
+  volumes:
+   - .:/Card-Game-with-React-Redux-and-Firebase-Authentication
+  ports:
+   - 3000:3000
+  image: app:react
+  container_name: card_game

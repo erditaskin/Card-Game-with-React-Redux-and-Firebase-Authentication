@@ -1,0 +1,167 @@
+.score {
+ text-align: center;
+ min-height: 130px;
+}
+.score.score-right {
+ padding-right: 10% !important;
+}
+.score.score-left {
+ padding-left: 10% !important;
+}
+.score-number {
+ text-align: center;
+ font-weight: 800;
+ color: #111;
+ font-size: 50px;
+ padding-top: 15px;
+}
+.score-number.winner {
+ color: #308834;
+}
+
+.round {
+ text-align: center;
+ font-size: 18px;
+ font-weight: 800;
+ color: #ffcc00;
+}
+.round .round-number {
+ color: #ff9000;
+ font-size: 60px;
+ padding-top: 15px;
+}
+
+.board {
+ text-align: center;
+}
+.board.board-right {
+ padding-right: 10% !important;
+}
+.board.board-left {
+ padding-left: 10% !important;
+}
+.board.board-deck .board-deck-img-wrapper {
+ position: relative;
+}
+
+.imageDeck {
+ margin: auto;
+ width: 200px;
+ border-radius: 5px;
+}
+.imageDealtCard {
+ width: 100%;
+ border-radius: 5px;
+}
+
+.flip-card {
+ display: inline-block;
+ background-color: transparent;
+ width: 300px;
+ height: 300px;
+ perspective: 1000px;
+}
+.flip-card-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+}
+.flip-card-front,
+.flip-card-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+}
+.flip-card-front {
+ z-index: 2;
+}
+.flip-card-back {
+ transform: rotateY(180deg);
+ z-index: 1;
+}
+.animate {
+ transition: transform 0.6s;
+ transform-style: preserve-3d;
+ animation: rotate 0.6s;
+}
+@keyframes rotate {
+ 0%,
+ 50% {
+  transform: rotateY(180deg);
+ }
+}
+
+.end-game-win {
+ color: #308834;
+}
+.end-game-lose {
+ color: #ff0000;
+}
+
+@media screen and (max-width: 1150px) {
+ .score {
+  text-align: center;
+  font-size: 14px;
+  min-height: 100px;
+ }
+ .score.score-right {
+  padding-right: 10px !important;
+ }
+ .score.score-left {
+  padding-left: 10px !important;
+ }
+ .score-number {
+  font-size: 14px;
+ }
+ .round {
+  font-size: 14px;
+  text-align: center;
+ }
+ .round .round-number {
+  font-size: 24px;
+ }
+ .board.board-right {
+  padding-right: 10px !important;
+ }
+ .board.board-left {
+  padding-left: 10px !important;
+ }
+ .imageDealtCard {
+  width: 100%;
+  border-radius: 5px;
+ }
+ .imageDeck {
+  width: 120px;
+ }
+ .flip-card {
+  width: 120px;
+  height: 120px;
+ }
+ .board-deck-img-wrapper {
+  height: 170px !important;
+ }
+ .remaining-info {
+  font-size: 12px !important;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .board-deck-img-wrapper img {
+  display: none;
+ }
+ .imageDeck {
+  width: 70px;
+ }
+ .flip-card {
+  width: 70px;
+  height: 70px;
+ }
+ .board-deck-img-wrapper {
+  height: 70px !important;
+ }
+ .remaining-info {
+  font-size: 10px !important;
+ }
+}

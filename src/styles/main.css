@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html,
+body {
+ min-height: 100vh;
+ height: auto;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+ background-image: -webkit-linear-gradient(top, #1a4a1c, #308834 600px);
+ background-image: -moz-linear-gradient(top, #1a4a1c, #308834 600px);
+ background-image: -o-linear-gradient(top, #1a4a1c, #308834 600px);
+ background-image: -ms-linear-gradient(top, #1a4a1c, #308834 600px);
+ background-image: linear-gradient(to bottom, #1a4a1c, #308834 600px);
+ background-size: cover;
+ color: #fff;
+}
+
+a {
+ text-decoration: none;
+ color: #1a4a1c;
+}
+
+.ta_c {
+ text-align: center;
+}
+.ta_l {
+ text-align: left;
+}
+.ta_r {
+ text-align: right;
+}
+
+.transparent-box {
+ background-color: rgba(1, 1, 1, 0.3);
+ color: #fff;
+ border-radius: 10px;
+}
+
+.p30 {
+ padding: 30px !important;
+}
+.container-margin {
+ margin: 30px 0;
+ width: 100% !important;
+}
+
+hr.styled {
+ border: 0;
+ height: 1px;
+ background-image: linear-gradient(
+  to right,
+  rgba(255, 255, 255, 0),
+  rgba(255, 255, 255, 0.75),
+  rgba(255, 255, 255, 0)
+ );
+ margin: 30px;
+}
+
+.blurred-container {
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 997;
+ background: rgba(0, 0, 0, 0.7);
+ backdrop-filter: blur(5px);
+}
+.blurred-container.show {
+ display: block;
+}
+.blurred-container.hidden {
+ display: none;
+}
+.blurred-wrapper {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+.auth-box {
+ max-width: 330px;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+}
+.auth-box .logo {
+ width: 100%;
+ text-align: center;
+ margin-top: 30px;
+}
+.auth-box .logo img {
+ width: 100px;
+ display: inline-block;
+ margin-bottom: 10px;
+}
+.auth-box .logo h1 {
+ font-size: 2rem;
+ display: inline-block;
+ margin: 0;
+ padding: 0;
+}
+.auth-box form {
+ padding: 40px;
+ margin-top: 30px;
+}
+.auth-box form h3 {
+ padding: 0;
+ margin: 0 0 10px 0;
+}
+
+.navbar-logo {
+ width: 45px;
+}
+.navbar-user-mail {
+ color: #253426;
+ font-weight: 400;
+ display: inline-block;
+ margin-right: 10px;
+}
+
+.home-banner-img {
+ width: 100%;
+}

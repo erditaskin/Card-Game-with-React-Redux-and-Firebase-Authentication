@@ -1,0 +1,44 @@
+@media screen and (max-width: 1300px) {
+ .container-margin {
+  margin: 15px auto !important;
+  width: 98% !important;
+ }
+}
+
+@media screen and (max-width: 1100px) {
+ .container-margin {
+  margin: 10px auto !important;
+  width: 96% !important;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .container-margin {
+  margin: 10px auto !important;
+  width: 96% !important;
+ }
+ .auth-box {
+  max-width: 90% !important;
+ }
+ .auth-box .logo img {
+  width: 80px;
+ }
+ .auth-box .logo h1 {
+  font-size: 1.8rem;
+ }
+ .auth-box form {
+  padding: 20px;
+ }
+ .auth-box form h3 {
+  font-size: 1.2rem;
+ }
+ .navbar h6 {
+  line-height: 100%;
+ }
+ .navbar-user-mail {
+  display: none;
+ }
+ .mb30sm {
+  margin-bottom: 30px !important;
+ }
+}

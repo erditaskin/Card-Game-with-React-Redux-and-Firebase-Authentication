@@ -1,6 +1,6 @@
 ## Ultimate Card Game
 
-This app is made for fulfilling requirements of given advanced react assesment task.
+Simple card game to employ React, Redux, Redux Thunk, Redux Persist and Firebase Authentication
 
 Project features
 
